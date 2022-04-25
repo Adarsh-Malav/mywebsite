@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@300&family=Square+Peg&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar{
+    background-color: rgb(207, 197, 197);
+    position: absolute;
+    font-family: 'Orelega One', cursive;
+    height: 100vh;
+    transition: transform 0.3s ease-in ;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0;
+}
+.sidebar nav li a{
+
+   text-decoration: none;
+   color: black;
+}
+.main{
+    /*background-color: yellow;*/
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+   /* background-color: blue;*/
+    height: 58vh;
+    width: 70vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.hello{
+    font-size: 3em;
+    
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    
+}
+.About{
+    font-size: 2.5em;
+}
+.moreAbout{
+font-size: 2em;
+margin-top: 23px;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: dodgerblue;
+    background-color: white;
+    
+}
+.contactform{
+    padding: 0 34px;
+    font-family: 'Orelega One', cursive;
+    margin: 0 88px;
+}
+.contactform h1{
+    font-family: 'Roboto Mono', monospace;
+    /* padding: 12px 0; */
+}
+
+.contactform form div{
+padding: 10px 0;
+display: flex;
+flex-direction: column;
+}
+.contactform form div input{
+    /*width: 26vw;*/
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform form{
+    margin: 0 40px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+
+}
+#form-check input{
+    width:24px;
+    margin: 3px 0;
+}
+.btn-sm{
+    font-size:14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+
+
+.devPic img{
+    height: 58vh;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.blogcontainer{
+    margin:40px 88px;
+}
+h1  {
+    font-family: 'Roboto Mono', monospace;
+    margin: 23px;
+
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+.intro{
+    margin: 10px 88px;
+}
+.intro h2{
+
+    font-family: 'Roboto Mono', monospace;
+    margin: 12px;
+}
+.intro p{
+    
+    font-family: 'Roboto Mono', monospace;
+    margin: 12px;
+}
+.skilcontainer{
+    padding: 12px;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+}
+.hundered{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 265px;
+    background-color: aqua;
+}
+.t5{
+    width: 265px;
+    background-color: yellow;
+}
+.sidebargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+}
+.hamburger{
+position: absolute;
+cursor: pointer;
+top: 10px;
+left: 10px;
+}
+.cross1{
+   margin-left: 170px; 
+}
+@media (max-width: 1300px) {
+    *{
+
+    }
+    .devPic{
+        display: none;
+     }
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+  /*  .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }*/
+    .intro,.blogcontainer,.contactform{
+        margin:50px 8px;
+    }
+}
